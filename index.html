@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .button {
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+<br>
+<h2>Sample charts:</h2>
+
+  <a href="https://opensource.org/licenses/GPL-3.0">GNU General Public License, version 3</a>
+  <h5>Vertical detailed composition with zoom</h5>
+  <a href="chart1.html">
+    <button class="button"><span>Chart 1 </span></button>
+  </a>
+  <h5>Hierarchical Horizontal Bar Chart</h5>
+  <a href="chart2.html">
+    <button class="button"><span>Chart 2 </span></button>
+  </a>
+  <h5>Hierarchical Donnut Chart</h5>
+  <a href="chart3.html">
+    <button class="button"><span>Chart 3 </span></button>
+  </a>
+  <h5>Vertical Bar Chart (no animation)</h5>
+  <a href="chart4.html">
+    <button class="button"><span>Chart 4 </span></button>
+  </a>
+  <h5>Vertical Bar Chart from csv (no animation)</h5>
+  <a href="chart5.html">
+    <button class="button"><span>Chart 5 </span></button>
+  </a>
+  <h5>Stacked-to-Grouped Vertical Bar Chart</h5>
+  <a href="chart6.html">
+    <button class="button"><span>Chart 6 </span></button>
+  </a>
+  <h5>DashBoard, Bar Chart + Circle Chart</h5>
+  <a href="chart7.html">
+    <button class="button"><span>Chart 7 </span></button>
+  </a>
+
+  <p></p>
+  <a href="https://opensource.org/licenses/MIT">MIT License</a>
+  <h5>Multiple Charts</h5>
+  <a href="https://hijiangtao.github.io/ss-vis-component/">
+    <button class="button"><span>Chart 8 </span></button>
+  </a>
+  <p>Source: <a href="https://github.com/hijiangtao/ss-vis-component/">GitHub</a></p>
+  
+</body>
+</html>
